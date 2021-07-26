@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Computron Tecnología a tu alcance</title>
+        <meta charset="UTF-8">
+        <meta name="descripción" content="página de inicio del sitio">
+        <link rel="stylesheet" href="css/Estilos_Computron.css"/>
+        <style>
+            /*.menu:hover{background: deepskyblue;}*/
+            .terminos:hover{text-decoration: underline;}
+            .resaltar:hover{font-weight: bold;}
+
+            .elemento{
+                border: 1px solid green;
+                border-radius: 40px;
+                background: lightblue;
+                padding: 10px;
+                margin-left: 2px;
+                text-align: center;
+            }
+            .elemento:hover{
+                height: 101%;
+                width: 101%;
+                color: yellow;
+                background: skyblue;
+            }
+            #galeria{
+                display: grid;
+                grid-gap: 40px;
+                margin-top: 40px;
+                justify-content: center;
+                grid-template-columns: 40% 40% ;
+                grid-template-rows: 300px 300px 300px 300px;       
+            }
+            .tres{
+                grid-column: 1/3;
+            }
+        </style>
+        <script type="text/javascript">
+            var i = 2;
+            function cambiar() {
+                var imagen = document.getElementById("baneroferta");
+                if (i % 2 === 0)
+                    imagen.src = "img/LineaHogar.jpeg";
+                else
+                    imagen.src = "img/OfertaComputron.jpeg";
+                i++;
+            }
+
+        </script>
+    </head>
+    <body>      
+        <header>
+            <div style="text-align:center">
+                <img id="banercomputron" style="width:40%" src="img/computron.png" alt="baner">
+                <div id="linkregistrar">
+                    <a href="Form_registrar.html"><span style="color: grey">Regístrese</span>
+                        <img style="width:15%" src="img/user-icon.png" alt="icono"></a> 
+                </div>
+            </div>
+        </header>
+        <nav>           
+            <div class="barrademenus">
+                <h1>TECNOLOGÍA PARA TODOS</h1>
+                <!--<a class="menu" href="#">INICIO</a>
+                <a class="menu" href="#">CELULARES Y TABLETS</a>
+                <a class="menu" href="#">COMPUTADORAS</a>
+                <a class="menu" href="#">ELECTRODOMÉSTICOS</a>
+                <a class="menu" href="#">CATÁLOGO DE PRODUCTOS</a>
+                <a class="menu" href="#">IMPRESORAS Y ESCÁNERS</a>
+                <a class="menu" href="#">JUEGOS</a>
+                <a class="menu" href="#">TV Y VÍDEO</a>-->
+            </div>
+        </nav>
+        <section>
+            <div>
+                <img id="baneroferta" style="width:100%" onmouseover="cambiar()" src="img/OfertaComputron.jpeg" alt="ofertas">
+            </div>
+            <div id="ContenedorTotal">
+                <div id="galeria">
+                    <a href="Panel_celulares.html">
+                        <div class="elemento">
+                            <h2>CELULARES Y TABLETS</h2>
+                            <img style="width:53%" src="img/Celu_tablets.png" alt="celulares"/>
+                        </div>
+                    </a>
+                    <a href="Panel_computadoras.html">
+                        <div class="elemento">
+                            <h2>COMPUTADORAS</h2>
+                            <img style="width:65%" src="img/computadoras.png" alt="computadoras"/>
+                        </div>
+                    </a>
+                    <div class="elemento tres">
+                        <h2>CATÁLOGO DE PRODUCTOS</h2>
+                        <a href="Panel_catalogo.html">
+                            <img style="width:20%" src="img/consolas.png" alt="videojuegos"/>
+                            <img style="width:20%" src="img/IMPRESORAS.png" alt="impresoras"/>
+                            <img style="width:25%" src="img/computadoras.png" alt="computadoras"/>
+                            <img style="width:15%" src="img/Celu_tablets.png" alt="celulares"/>
+                        </a>
+                    </div>
+                    <a href="Panel_electrodomesticos.html">
+                        <div class="elemento">
+                            <h2>ELECTRODOMÉSTICOS</h2>
+                            <img style="width:89%" src="img/electrodomesticos.png" alt="electrodomesticos"/>
+                        </div>
+                    </a>
+                    <a href="Panel_impresoras.html">
+                        <div class="elemento">
+                            <h2>IMPRESORAS Y ESCÁNERS</h2>
+                            <img style="width:45%" src="img/IMPRESORAS.png" alt="impresoras"/>
+                        </div>
+                    </a>
+                    <a href="Panel_juegos.html">
+                        <div class="elemento">
+                            <h2>JUEGOS</h2>
+                            <img style="width:52%" src="img/consolas.png" alt="videojuegos"/>
+                        </div>
+                    </a>
+                    <a href="Panel_video.html">
+                        <div class="elemento">
+                            <h2>TV Y VÍDEO</h2>
+                            <img style="width:45%" src="img/tele.png" alt="televisores"/>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="PiePagina">
+                <div id="bloqueprefinal">
+                    <div class="prefinal">
+                        <h5>Ayuda y soporte</h5>
+                        <a class="resaltar" style="color: black" href="#"><p>Cancela tu cuota</p></a>
+                        <a class="resaltar" style="color: black" href="#"><p>Métodos de Pago</p></a>
+                        <a class="resaltar" style="color: black" href="#"><p>Nuestras Tiendas</p></a>
+                        <a class="resaltar" style="color: black" href="#"><p>Políticas de garantías</p></a>
+                        <a class="resaltar" style="color: black" href="#"><p>Garantía Todo Riesgo</p></a>
+                    </div>
+                    <div class="prefinal">
+                        <h5>Información</h5>
+                        <p>04-501-7700</p>
+                    </div>
+                    <div class="prefinal">
+                        <h5>Síguenos en</h5>
+                        <a href="#"><img class="redeslogos" src="img/facebook-icon.png" alt="facebook"></a>
+                        <a href="#"><img class="redeslogos" src="img/twitter-icon.png" alt="twitter"></a>
+                        <a href="#"><img class="redeslogos" src="img/Instagram-Icon.png" alt="instagram"></a>
+                    </div>
+                </div>
+                <div class="lineafinal">
+                    <p id="derechos" style="color: white">© Computron 2019. Todos los derechos reservados.</p>
+                    <a class="terminos" href="#">Términos y condiciones</a>
+                    <a class="terminos" href="#">Políticas de Privacidad</a>
+                    <a class="terminos" href="#">Políticas de uso de Cookies</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

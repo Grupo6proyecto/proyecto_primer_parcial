@@ -1,0 +1,167 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+}
+
+
+.contenedor {
+    width: 90%;
+    max-width: 1280px;
+    margin: auto;
+}
+
+li{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: blueviolet;
+    background-size: cover;
+    height: 100vh;
+}
+#bannercomputron{
+    height: 80px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    margin: 0 20px;
+}
+
+header ul li a {
+    color: aqua;
+}
+
+.titular {
+    text-align: center;
+    margin-top: 40vh;
+    color: aqua;
+}
+
+h1 {
+    font-size: 50px;
+    font-style: italic;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.titular a {
+    background: #000;
+    color: rgb(238, 150, 18);
+    padding: 20px 40px;
+}
+
+.contenedor-tarjetas {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.tarjeta {
+    text-align: center;
+    box-shadow: -1px 0px 5px #0000001f;
+    width: 28%;
+    margin-top: -100px;
+    background: #fff;
+    padding: 40px 0px;
+    border-radius: 6px;
+}
+
+#segundatar {
+   margin: 0px 60px;
+   margin-top: -100px;
+}
+
+.tarjeta p {
+    font-size: 15px;
+}
+
+.tarjeta a {
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+#classes {
+    background: #ccc7c7;
+    margin-top: -200px;
+    padding-top: 200px;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+}
+
+.table p {
+    font-size: 6px;
+}
+.blanco, th {
+    background: #fffdfd;
+}
+
+th {
+    padding: 20px 0px;
+    font-size: 14px;
+}
+
+td {
+    padding: 8px 0px;
+    font-size: 10px;
+}
+
+.gris {
+    background: #b5b1b1;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+    font-size: 25px;
+    font-style: italic;
+}
+
+#galeria {
+    display: flex;
+}
+
+#galeria img {
+    width: 100%;
+}
+
+#galeria .foto {
+    width: 50%;
+    position: relative;
+}
+
+.oculto {
+    top: 0%;
+    left: 0%;
+    background: #00000070;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+}
+
+.oculto h4 {
+    position: relative;
+    top: 45%;
+}

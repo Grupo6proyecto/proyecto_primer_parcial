@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Computron Tecnología a tu alcance</title>
+        <meta charset="UTF-8">
+        <meta name="descripción" content="formulario para registar el medio de pago del cliente en la tienda computron">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"/>
+        <script type="text/javascript" src="js/Validacionestres.js">
+ 
+        </script>
+        <style>
+            body{background: #f0f2f5; margin-top: 20px;}
+            #Metododepago{
+                background: aliceblue; 
+                border-radius: 20px;
+                margin-top: 30px;
+                width: 450px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                padding-left: 30px;
+                padding-right: 30px;
+                margin: 0 auto;
+            }
+            #formulario{
+                border: 1px solid black;
+                background: lightblue;
+                width: 520px;
+                margin: 0 auto;
+                margin-bottom: 60px;
+            }
+            #botonvolver{
+                color: grey;
+                border: 1px solid black;
+                border-radius: 30px;
+                background: buttonhighlight;
+                text-decoration: none;
+                font-weight: bold;
+                text-align: center;
+                margin-left: 70px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            .componente{
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            .textblock{float: right;}
+            .botones{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <a id="botonvolver" href="Panel_principal.html">VOLVER A INICIO</a>
+        </div>
+        <div id="ContenedorFormulario">
+            <div id="formulario">
+                <h1 style="text-align: center; padding-top: 10px; padding-bottom: 10px"> Medio de Pago</h1>
+                <hr>
+                <form id="Metododepago">
+                    <div class="componente">
+                        <label>Tipo de tarjeta:</label>
+                        <div style="padding-left: 15px">
+                            <input id="Débito" type="radio" name="tipotarjeta" value="Al"/> Débito<br>
+                            <input id="Crédito" type="radio" name="tipotarjeta" value="Pr"/> Crédito<br>
+                        </div>
+                    </div>
+                    <div class="componente">
+                        <label>Numero de tarjeta:</label>
+                        <input type="text" name="numero" id="numerotarjeta" class="textblock"/>
+                    </div>
+                    <div class="componente">
+                        <label>Nombre del propietario:</label>
+                        <input type="text" name="numero" id="duenotarjeta" class="textblock"/>
+                    </div>
+                    <div class="componente">
+                        <label>Código de seguridad (CVV):</label>
+                        <input type="text" name="numero" id="codigotarjeta" class="textblock"/>
+                    </div>
+                    <div class="componente">
+                        <h6>Fecha de Caducidad</h6>
+                        <label>Mes:</label>
+                        <select name="mes" id="mes">
+                            <option value="0">Seleccione..</option>
+                            <option value="1">Enero</option>
+                            <option value="2">Febrero</option>
+                            <option value="3">Marzo</option>
+                            <option value="4">Abril</option>
+                            <option value="5">Mayo</option>
+                            <option value="6">Junio</option>
+                            <option value="7">Julio</option>
+                            <option value="8">Agosto</option>
+                            <option value="9">Septiembre</option>
+                            <option value="10">Octubre</option>
+                            <option value="11">Noviembre</option>
+                            <option value="12">Diciembre</option>
+                        </select>
+                    </div>
+                    <div class="componente">
+                        <label>Año:</label>
+                        <select name="anio" id="anio">
+                            <option value="0">Seleccione..</option>
+                            <option value="1">2022</option>
+                            <option value="2">2023</option>
+                            <option value="3">2024</option>
+                            <option value="4">2025</option>
+                            <option value="5">2026</option>
+                            <option value="6">2027</option>
+                            <option value="7">2028</option>
+                            <option value="8">2029</option>
+                            <option value="9">2030</option>
+                            <option value="10">2031</option>
+                            <option value="11">2032</option>
+                            <option value="12">2032</option>
+                        </select>
+                    </div>
+                    <div class="componente">                      
+                        <input type="checkbox" name="confirmar" value="confirmar" id="confirmar"/>
+                        <label for="confirmar">Acepto que los datos ingresados coinciden con <br>los datos de la tarjeta</label>
+                    </div>
+                    <div class="botones">
+                        <input type="button" onclick="validar()" style="margin-left:40px; margin-right: 40px" class="btn btn-primary" value="Guardar">
+                        <input type="reset" style="margin-left:40px; margin-right: 40px" class="btn btn-primary" value="Cancelar">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Computron Tecnología a tu alcance</title>
+        <meta charset="UTF-8">
+        <meta name="descripción" content="formulario para registrar usuarios en la tienda computron">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"/>
+        <script type="text/javascript" src="js/Validaciones.js">
+                
+        </script>
+        <style>
+            body{background: #f0f2f5; margin-top: 20px;}
+            #Registrese{
+                background: aliceblue;
+                border-radius: 20px;
+                margin-top: 30px;
+                width: 480px;
+                /*height: 510px;*/
+                padding-top: 20px;
+                padding-bottom: 20px;
+                padding-left: 30px;
+                padding-right: 30px;
+                margin: 0 auto;
+            }
+            #formulario{
+                border: 1px solid black;
+                background: lightblue;
+                width: 550px;
+                /*height: 630px;*/
+                margin: 0 auto;
+                margin-bottom: 60px;
+                padding-bottom: 30px;
+            }
+            #botonvolver{
+                color: grey;
+                border: 1px solid black;
+                border-radius: 30px;
+                background: buttonhighlight;
+                text-decoration: none;
+                font-weight: bold;
+                text-align: center;
+                margin-left: 70px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            .componente{
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            .textblock{float: right;}
+            .botones{text-align: center;}
+        </style>
+    </head>
+    <body>
+        <div>
+            <a id="botonvolver" href="Panel_principal.html">VOLVER A INICIO</a>
+        </div>
+        <div id="ContenedorFormulario">
+            <div id="formulario">
+                <h1 style="text-align: center; padding-top: 10px; padding-bottom: 10px">Regístrese en Computron</h1>
+                <hr>
+                <form id="Registrese" onsubmit="return validar()">
+                    <div class="componente">
+                        <label>Apellidos:</label>
+                        <input type="text" name="apellidos" id="apellidos" class="textblock"/>
+                    </div>
+                    <div class="componente">
+                        <label>Nombres:</label>
+                        <input type="text" name="nombres" id="nombres" class="textblock"/>
+                    </div>
+                    <div class="componente">
+                        <label>Correo Electrónico:</label>
+                        <input type="email" name="correo" id="correo" class="textblock"/>
+                    </div>
+                    <div class="componente">
+                        <label>Ingrese un nombre de usuario:</label>
+                        <input type="text" name="usuario" id="usuario" class="textblock">                    
+                    </div>
+                    <div class="componente">
+                        <label>Ingrese una contraseña:</label>
+                        <input type="password" name="contrasenia" id="contrasenia" class="textblock">
+                    </div>
+                    <div class="componente">
+                        <label>Método preferible de pago:</label>
+                        <div style="padding-left: 15px">
+                            <input id="tarjeta" type="radio" name="formapago" value="TC"/> Tarjeta de Crédito<br>
+                            <input id="efectivo" type="radio" name="formapago" value="PC"/> Pago al Contado<br>
+                        </div>
+                    </div>
+                    <div class="componente">
+                        <label>Tipo de persona:</label>
+                        <select name="tipopersona" id="tipopersona">
+                            <option value="0">Seleccione..</option>
+                            <option value="1">Natural</option>
+                            <option value="2">Jurídica</option>
+                        </select>
+                    </div>
+                    <div class="componente">                      
+                        <input type="checkbox" name="confirmar" value="confirmar" id="confirmar"/>
+                        <label for="confirmar">He leído y acepto los términos y condiciones de<br>Computron S.A.</label>
+                    </div>
+                    <div class="botones">
+                        <input type="submit" style="margin-left:40px; margin-right: 40px" class="btn btn-primary" value="Guardar">
+                        <input type="reset" style="margin-left:40px; margin-right: 40px" class="btn btn-primary" value="Cancelar">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Computron Tecnología a tu alcance</title>
+        <meta charset="UTF-8">
+        <meta name="descripción" content="formulario para realizar pedidos anticipados de juegos de vídeo">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"/>
+        <script type="text/javascript" src="js/Validacionesdos.js">
+           
+        </script>
+        <style>
+            body{
+                background: #f0f2f5; 
+                margin-top: 20px;
+            }
+            #botonvolver{
+                color: grey;
+                border: 1px solid black;
+                border-radius: 30px;
+                background: buttonhighlight;
+                text-decoration: none;
+                font-weight: bold;
+                text-align: center;
+                margin-left: 70px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            #formulario{
+                border: 1px solid black;
+                background: lightblue;
+                width: 940px;
+                margin: 0 auto;
+                margin-bottom: 60px;
+                margin-top: 10px;
+            }
+            #Comprarjuego{
+                background: aliceblue; 
+                border-radius: 20px;
+                margin-top: 30px;
+                width: 800px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                padding-left: 30px;
+                padding-right: 30px;
+                margin: 0 auto;
+            }
+            #tabla{
+                width: 650px;
+                margin: 0 auto;
+            }
+            .celda{
+                padding: 10px;
+            }
+            .izquierda{float: left;}
+            .derecha{
+                float: right;
+                padding-right: 30px;
+            }
+            .botones{
+                text-align: center;
+                padding-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <a id="botonvolver" href="Panel_juegos.html">VOLVER A JUEGOS</a>
+        </div>
+        <div id="ContenedorFormulario">
+            <div id="formulario">
+                <h2 style="text-align: center; padding-top: 7px; padding-bottom: 7px">Ordenar un videojuego</h2>
+                <p style="text-align: center">Computron sólo distribuye videojuegos exclusivos para las consolas PS4 y PS5<br>
+                    Las entregas se realizan bajo pedido en un lapso de 15 a 20 días.</p>
+                <hr style="background: black">
+                <form id="Comprarjuego">
+                    <table id="tabla">
+                        <tr>
+                            <td class="celda izquierda">
+                                <label>Ingrese el nombre de su videojuego:</label><br>
+                                <input type="text" name="nombrejuego" id="nombrejuego">
+                            </td>
+                            <td class="celda derecha">
+                                <label>Dirección de facturación:</label><br>
+                                <input type="text" name="direccion" id="direccion">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="celda izquierda">
+                                <label>Escoga el género al que pertenece su videojuego:</label><br>
+                                <input class="genero" type="checkbox" name="accion" value="accion" id="accion">
+                                <label for="accion"> Acción</label><br>
+                                <input class="genero" type="checkbox" name="aventuras" value="aventuras" id="aventuras">
+                                <label for="aventuras"> Aventuras</label><br>
+                                <input class="genero" type="checkbox" name="deportes" value="deportes" id="deportes">
+                                <label for="deportes"> Deportes</label><br>
+                                <input class="genero" type="checkbox" name="estrategia" value="estrategia" id="estrategia">
+                                <label for="estrategia"> Estrategia</label><br>
+                                <input class="genero" type="checkbox" name="openmundo" value="openmundo" id="openmundo">
+                                <label for="openmundo"> Mundo Abierto</label><br>
+                                <input class="genero" type="checkbox" name="simuladores" value="simuladores" id="simuladores">
+                                <label for="simuladores"> Simuladores</label><br>
+                                <input class="genero" type="checkbox" name="terror" value="terror" id="terror">
+                                <label for="terror"> Terror</label>
+                            </td>
+                            <td class="celda derecha">
+                                <label>Código Postal:</label><br>
+                                <input type="text" name="postal" id="postal"><br>
+                                <label>Servicio de Entrega:</label><br>
+                                <select name="tipoentrega" id="tipoentrega">
+                                    <option value="0">Seleccione..</option>
+                                    <option value="1">Computron</option>
+                                    <option value="2">Servientrega</option>
+                                    <option value="3">Pedidos Ya</option>
+                                    <option value="2">Correos del Ecuador</option>
+                                </select><br><br>
+                                <label>Plataforma:</label><br>
+                                <input type="radio" name="plataforma" value="ps4"> PlayStation 4<br>
+                                <input type="radio" name="plataforma" value="ps5"> PlayStation 5
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="celda izquierda">
+                                <label>Observaciones:</label><br>
+                                <textarea id="texto" cols="80" rows="3"></textarea>
+                            </td>
+                            <td class="celda derecha"></td>
+                        </tr>
+                    </table>
+                    <div class="botones">
+                        <input type="button" onclick="validar()" style="margin-left:50px; margin-right: 50px" class="btn btn-primary" value="Guardar">
+                        <input type="reset" style="margin-left:50px; margin-right: 50px" class="btn btn-primary" value="Cancelar">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

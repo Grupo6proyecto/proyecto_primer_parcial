@@ -1,0 +1,107 @@
+/* 
+    Created on : 14 jul. 2021, 00:41:03
+    Author     : Christopher
+*/
+/*Selector Universal*/
+*{
+    font-family: helvetica;
+}
+/*Selector de Elementos*/
+hr{
+    width: 90%;
+}
+a{
+   text-decoration: none;
+}
+h1{
+    font-weight: bold;
+    font-size: 30px;
+}
+h5{
+    font-weight: bold;
+    font-size: 22px;
+}
+body{
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+/*Selector por Clases*/
+.barrademenus{
+    background: lightblue;
+    line-height: 80px;
+    text-align: center;
+    height: 80px;
+}
+/*.menu{
+    display: inline-block;
+    color: white;
+    padding-left: 17px;
+    padding-right: 17px;
+    margin-left: 4px;
+    margin-right: 4px;
+    font-family: fantasy;
+    font-size: 17px;
+    border: 2px solid deepskyblue;
+    border-radius: 7px;
+    background: #1360ac;
+}*/
+.PiePagina{
+    height: 300px;
+    background: #f0f2f5;
+    text-align: center;
+    margin-top: 40px;
+}
+.terminos{
+    color: white;
+    padding-left: 7px;
+    padding-right: 7px;
+    font-size: 15px;
+    margin-top: 40px;
+}
+.prefinal{
+    display: inline-block;
+    margin-left: 70px;
+    margin-right: 70px;
+    vertical-align: top;
+}
+.lineafinal{
+    text-align: center;
+    height: 90px;
+    background: #1360ac;
+    padding-left: 70px;
+}
+.redeslogos{
+    width: 25px;
+    height: 25px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+.zoom{
+    width: 50%;
+}
+.zoom:hover{
+    width: 55%;
+}
+/*Selector por id*/
+#bannercomputron{
+    height: 140px;
+}
+#derechos{
+    display: inline-block;
+    font-size: 15px;
+    padding-right: 30px;
+    margin-top: 40px;
+}
+#bloqueprefinal{
+    padding-bottom: 25px;
+}
+#linkregistrar{
+    margin-top: 20px;
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    width: 120px;
+    float: right;
+}
